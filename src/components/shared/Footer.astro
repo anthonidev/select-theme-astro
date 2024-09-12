@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<footer class="bg-default">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 pb-3 pt-16 lg:px-8">
+    <div class="space-global flex flex-col justify-between lg:flex-row">
+      <div class="space-y-8">
+        <a class="hover:!text-default flex items-center gap-3" href="/">
+          <h1 class="sr-only">Invertefast</h1>
+          <Icon name="logomark" class="h-10 w-36" />
+        </a>
+      </div>
+      <div class="space-y-8">
+        <p class="text-xs max-w-xl leading-6 text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+          molestias aliquam accusantium modi odio neque repellat quod voluptas
+          libero voluptate tenetur iure velit similique quam perspiciatis ipsam
+          minima fugiat provident!
+        </p>
+        <a
+          href="https://app.inversiones.io/proyectos-a-financiar/financiamiento-de-capital-de-trabajo-241"
+          class="link hover:bg-primary-dark text-base flex items-center justify-center rounded-md bg-primary px-6 py-3 font-bold uppercase text-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Link externo
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-3">
+      <p class="text-xs leading-5 text-gray-400">
+        &copy; 2024 Invertifast. Todos los derechos reservados.
+        <strong> | Hecho por Agencia Belmont </strong>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .link {
+    @apply bg-primary uppercase;
+    color: black;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid black;
+    box-shadow: 0 0 0 0 black;
+  }
+
+  .link:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 rgb(252, 191, 45);
+  }
+
+  .link:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 rgb(252, 191, 45);
+  }
+
+  .link:focus {
+    outline: none;
+  }
+</style>
